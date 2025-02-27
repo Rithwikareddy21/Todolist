@@ -8,14 +8,17 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1>📝 To-Do List App</h1>
+        <h1>📝 To-Do List</h1>
     </nav>
+
     <div class="container">
         <h2>✅ Manage Your Tasks</h2>
         <input type="text" id="taskInput" placeholder="Enter a task...">
         <button onclick="addTask()" class="styled-btn addbtn">➕ Add Task</button>
         <ul id="taskList"></ul>
+        
         <button onclick="clearTasks()" class="styled-btn delete-btn">🗑️ Clear All Tasks</button>
+        <button onclick="viewCompletedTasks()" class="styled-btn">📋 View Completed Tasks</button>
     </div>
 
     <script src="script.js"></script>
