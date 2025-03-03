@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd6e0; /* Light Pink */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff85a2; /* Pink */
+    padding: 1rem;
+    color: white;
+}
+
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field */
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.styled-btn {
+    width: 40%;
+    padding-left: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(55, 51, 51);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: rgb(167, 231, 207);
+    margin: auto;
+    display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    
+}
+
+.styled-btn:hover {
+    background-color: rgb(232, 182, 218);
+}
+
+.delete-btn {
+    display: flex;
+    background-color: rgb(180, 57, 57);
+    color: rgb(246, 235, 235);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    width: 180px;
+    border: none;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffe4e9;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    gap: 10px;
+}
+
+/* Completed Task Style */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
+.addbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Completed Task Style - Apply to the Whole Row */
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+    pointer-events: none; /* Prevents further clicks */
+}
+.completed-task {
+    opacity: 0.5; 
+    pointer-events: none; /* Disable interactions */
+}
+.center-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
